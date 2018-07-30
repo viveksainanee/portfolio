@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Anurati';
+  src: url('Anurati-Regular.otf');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  animation: pulse 1s;
+  animation-iteration-count: 1;
+  color: #eafffc;
+  background-color: #141414;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.header {
+  flex-direction: row;
+}
+
+.oreoblock {
+  width: 50%;
+  height: 700px;
+  overflow: hidden;
+}
+
+#oreo {
+  font-family: 'Anurati', Arial, sans-serif;
+  font-size: 200%;
+  letter-spacing: 25px;
+  color: #eafffc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.intro,
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  align-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 150%;
+  text-align: center;
+  color: #1be5d4;
+}
+
+.landing {
+  color: #141414;
+  background: #eafffc;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  line-height: 2;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  #oreo {
+    font-size: 400%;
+  }
+
+  .intro,
+  .contact {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 160%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #oreo {
+    font-size: 600%;
+  }
+
+  .intro,
+  .contact {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 170%;
+  }
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #eafffc;
+}
+
+a:hover {
+  color: #1be5d4;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eafffc;
+  }
+  100% {
+    background-color: #141414;
+  }
+}
