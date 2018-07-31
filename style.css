@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px;
-  animation: pulse 1s;
+  animation: bgfade 1s;
   animation-iteration-count: 1;
   color: #eafffc;
   background-color: #141414;
@@ -35,6 +35,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  animation: textfade 3s;
+  animation-iteration-count: 1;
 }
 
 .intro,
@@ -112,11 +114,20 @@ a:hover {
   color: #1be5d4;
 }
 
-@keyframes pulse {
+@keyframes bgfade {
   0% {
     background-color: #eafffc;
   }
   100% {
     background-color: #141414;
+  }
+}
+
+@keyframes textfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
